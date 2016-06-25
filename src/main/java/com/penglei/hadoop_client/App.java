@@ -13,7 +13,7 @@ import org.apache.hadoop.fs.Path;
 public class App {
 	public static void main(String[] args) throws Exception {
 		FileSystem fs = FileSystem.newInstance(new URI("hdfs://192.168.0.104:9000"), new Configuration());
-		
+
 		fs.create(new Path("/hello"));
 	}
 }
